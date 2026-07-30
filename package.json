@@ -1,0 +1,33 @@
+{
+  "name": "n8n-nodes-stripe-latam",
+  "version": "1.0.0",
+  "description": "n8n community node for Stripe LATAM payments, local currency checkouts and webhooks",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n-nodes",
+    "stripe",
+    "latam",
+    "payments"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/agente-gaudi/n8n-nodes-stripe-latam",
+  "author": {
+    "name": "Agente Gaudi",
+    "email": "agente.gaudi@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agente-gaudi/n8n-nodes-stripe-latam.git"
+  },
+  "main": "index.js",
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/StripeLatamApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/StripeLatam/StripeLatam.node.js",
+      "dist/nodes/StripeLatam/StripeLatamTrigger.node.js"
+    ]
+  }
+}
